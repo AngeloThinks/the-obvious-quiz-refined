@@ -1,15 +1,14 @@
-body{
-  background-color: lightslategray;
-
+body {
+  background-color: rgb(14, 61, 107);
 }
-main{
+main {
   width: 600px;
   text-align: center;
   margin: 0 auto;
 }
 
-.card{
-  background-color: burlywood;
+.card {
+  background-color: rgb(245, 151, 28);
   border: 1px solid black;
   margin: 50px;
   padding: 50px;
@@ -31,10 +30,9 @@ main{
 h1 {
   margin-top: 100px;
   text-align: center;
-  background-color: burlywood;
+  background-color: rgb(245, 151, 28);
   box-shadow: 0 0 10px 2px;
-
-} 
+}
 
 /* .container {
     position: absolute;
@@ -53,67 +51,76 @@ h1 {
   
   } */
 
-  /*counter elments*/
-  #status{
-    font-weight: bolder;
-    font-size: 24px;
-    display: flex;
-    justify-content: space-between;
-  }
+/*counter elments*/
+#status {
+  font-weight: bolder;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+}
 
-  
-  .hidden {
-    visibility: hidden;
-  }
+.hidden {
+  visibility: hidden;
+}
 
-  .end {
-    display: flex;
-    justify-content: center;
-    background-color: ivory;
-  }
+.end {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(245, 151, 28);
+}
 
-  #restart {
-    background-color: burlywood;
-    font-size: 32px;
-    padding: 30px;
-    margin: 50px 0;
-  }
+#restart {
+  background-color: ivory;
+  font-size: 32px;
+  padding: 30px;
+  margin: 50px 0;
+}
 
-  .radio{
-    display: flex;
-    flex-direction: row;
-    
-    font-size: 20px;
-    font-weight: 900;
-    margin-bottom: 10px;
-    justify-content: space-around;
-    padding: 0;
-    margin: 0;
-  }
+.radio {
+  display: flex;
+  flex-direction: row;
 
-  .row{
-    display: flex;
-    flex-direction: column; 
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
 
-    /* justify-content: space-evenly; */
-    /* flex-flow: column; */
-    width: 50%
-    
-  }
+/* handles submit button placement */
+.submit {
+  text-align: center;
+  padding: 1px 5px;
+  display: flex;
+  align-items: center;
+  transform: translate(5%, 75%);
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+}
 
-  label#answer{
-    background-color: antiquewhite;
-    border-radius: 10px;
-    border-width: 2px;
-    border-color: black;
-    border-style: solid;
-    box-shadow: 0 0 10px 2px;
-    padding: 20px;
-    margin: 0 10px;
-    flex: 1;
-    word-wrap: break-word;
-  }
+.row {
+  display: flex;
+  flex-direction: column;
 
-  input[type="radio"]{
-    visibility: hidden;
-  }
+  /* justify-content: space-evenly; */
+  /* flex-flow: column; */
+  width: 50%;
+}
+
+label#answer {
+  background-color: ivory;
+  border-radius: 10px;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  box-shadow: 0 0 10px 2px;
+  padding: 20px;
+  margin: 0 10px;
+  flex: 1;
+  word-wrap: break-word;
+}
+
+input[type="radio"] {
+  visibility: visible;
+}
