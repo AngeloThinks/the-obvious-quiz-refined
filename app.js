@@ -64,14 +64,14 @@ function generateQuestion(item) {
         ${item.answers[i]}</label></div>`;
     }
   }
-
+  // include type='Submit'
   return `<div class="card">
     <h2>${item.question}</h2>
-    <form>
+    <form class="quizForm">
     <div class="radio">
       ${qString}
       </div>
-      <button class="submit">Submit</button> 
+      <button class="submit" type="submit">Submit</button> 
       <div id="status">
       <label id="counter">${store.questionNumber + 1} out of ${
     store.questions.length
@@ -83,11 +83,15 @@ function generateQuestion(item) {
 }
 
 function submitButton() {
-  $("main").on("click", ".submit", function (evt) {
-    let value = $("input[name = 'answer']:checked").val();
+  // $("main").on("click", ".submit", function (evt) {
+  // added .quizForm and changed click to submit
+  $("main").on("submit", ".quizForm", function (evt) {
     evt.preventDefault();
-    if (value) {
+    let value = $("input[name = 'answer']:checked").val();
+    if (value){
       checkAnswer(value);
+    } else {
+      alert("Please make a selection");
     }
     console.log("logged submit value" + value);
   });
@@ -185,4 +189,3 @@ function main() {
 }
 
 $(main);
-
